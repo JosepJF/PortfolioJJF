@@ -1,0 +1,62 @@
+/* ------------------ HEADER SECTION ------------------ */
+
+.img-full {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.project-img {
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .project-img {
+        bottom: 20px;
+    }
+}
+
+/* ------------------ PROJECT SECTION ------------------ */
+
+.card {
+    background-color: #313131 !important;
+}
+
+.card:hover {
+    background-color: rgba(207, 162, 102, 0.198) !important;
+    box-shadow: 0px 0px 2px white !important;
+}
+
+.badge-project{
+    color: #2a2a2a !important;
+    background-color: #CFA266;
+    padding: 4px !important;
+}
+
+@media screen and (max-width: 575px) {
+    .d-ms-none {
+        display: none;
+    }
+}
+
+/* ------------------ ABOUTME SECTION ------------------ */
+
+.custom-row{
+    max-width: 720px !important;
+}
+
+/* ------------------ ICON SKILLS ------------------ */
+
+.icon-skill{
+    height: 64px;
+    width: auto;
+}
+
+/* ------------------ CONTACT BUTTON ------------------ */
+
+.btn-primary{
+    background-color: #4587a7 !important;
+}

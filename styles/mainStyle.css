@@ -1,0 +1,68 @@
+/* ------------------ HEADER SECTION ------------------ */
+
+.header-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/header-bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-title {
+    position: relative;
+    bottom: 60px;
+    color: rgb(46, 46, 46);
+    font-size: 200px;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#header-sub-title {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#header-btn {
+    padding: 10px !important;
+}
+
+.header-img {
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    #header-title {
+        font-size: 80px;
+    }
+
+    #header-sub-title {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    .header-img {
+        bottom: 20px;
+    }
+}
+
+/* ------------------ PROJECT SECTION ------------------ */
+
+.text-og {
+    color: #CFA266;
+}
+
+.card {
+    background-color: #313131 !important;
+}
+
+.card:hover {
+    background-color: rgba(207, 162, 102, 0.198) !important;
+    box-shadow: 0px 0px 2px white !important;
+}

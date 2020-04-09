@@ -1,0 +1,212 @@
+/* ------------------ VARIABLES ------------------ */
+
+:root {
+    --navbar-bg-color: #333;
+    --links-color: #d3d3d3;
+    --border-links-color: #CFA266;
+}
+
+/* ------------------ GENERAL ELEMENTS ------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #272727 !important;
+}
+
+.text-og {
+    color: #CFA266;
+}
+
+/* --------------------------------------- NAVBAR SECTION --------------------------------------- */
+
+/* ------------------ TOP NAV BAR ------------------ */
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: var(--navbar-bg-color);
+    border-bottom-style: solid !important;
+    border-bottom-color: var(--border-links-color);
+    border-bottom-width: thin;
+    overflow: hidden;
+    z-index: 30;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: #CFA266;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav .navbar-icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* ------------------ MENU ICON ------------------ */
+
+.navbar-icon {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    display: none;
+}
+
+.navbar-icon:hover {
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* ------------------ ANIMATED BAR ------------------ */
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 40px;
+    background-color: var(--navbar-bg-color);
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.sidenav a {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px 20px 20px 20px;
+    color: var(--links-color);
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-links-color);
+    border-bottom-width: thin;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#first-link {
+    border-top-style: solid;
+    border-top-color: var(--border-links-color);
+    border-top-width: thin;
+}
+
+/* --------------------------------------- FOOTER SECTION --------------------------------------- */
+
+.footer-img {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.footer-bg {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #111111;
+}
+
+.footer-container {
+    margin-top: 0px;
+}
+
+/* ------------------ FOOTER  ARROW ICON ------------------ */
+
+#footer-arrow {
+    color: #CFA266;
+}
+
+/* ------------------ FOOTER WEB LINKS ------------------ */
+
+.btn-link {
+    color: white !important;
+    background-color: #ffffff00 !important;
+    border: none !important;
+}
+
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active,
+.btn-link.active,
+.open>.dropdown-toggle.btn-link {
+    color: #CFA266 !important;
+}
+
+/* ------------------ FOOTER SOCIAL MEDIA ICONS ------------------ */
+
+.footer-items {
+    display: inline-block;
+    padding: 0.4em 0.4em;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 3px var(--border-links-color);;
+}
+
+.footer-items:hover {
+    color: #CFA266;
+    box-shadow: 0px 0px 3px white;
+    text-decoration: none;
+}
+
+/* --------------------------------------- BUTTONS ELEMNTS --------------------------------------- */
+
+.btn-standard {
+    color: white !important;
+    background-color: #292929a4 !important;
+    border: 1px solid #CFA266 !important;
+}
+
+.btn-standard:hover,
+.btn-standard:focus,
+.btn-standard:active,
+.btn-standard.active,
+.open>.dropdown-toggle.btn-standard {
+    color: #fff !important;
+    background-color: rgba(207, 162, 102, 0.13) !important;
+    border-color: #CFA266 !important;
+}
