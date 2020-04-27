@@ -20,8 +20,6 @@
     <link rel="apple-touch-icon" href="../images/logo-android.png">
     <meta name="description" content="Personal Library is a desktop application where the user can create and keep a list with
     his series, movies, animes and books">
-
-  
 </head>
 
 <body id="body">
@@ -190,7 +188,7 @@
             <div class="row text-center footer-container">
                 <!-- ARROW ICON -->
                 <div class="col-12">
-                    <a href="#top">
+                    <a href="#body">
                         <i class="fas fa-angle-double-up fa-2x" id="footer-arrow"></i>
                     </a>
                 </div>
@@ -237,6 +235,31 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    if (hash != "#carouselExampleIndicators") {
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top //- 130 // -130 para la navbar
+                        }, 900, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            // window.location.hash = hash;
+                        });
+                    }
+                } // End if
+            });
+        });
     </script>
 
 </body>

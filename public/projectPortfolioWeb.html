@@ -126,7 +126,7 @@
                     </p>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong>Platform:</strong>Web</span>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong>Program:
-                    </strong>Visual Studio Code</span>
+                        </strong>Visual Studio Code</span>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong></strong>HTML</span>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong></strong>CSS</span>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong></strong>Bootstrap</span>
@@ -134,7 +134,8 @@
                     <span class="d-none d-lg-inline-block badge badge-project"><strong>Duratio: </strong>1
                         week</span>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong>Team size: </strong>1</span>
-                    <span class="d-none d-lg-inline-block badge badge-project"><strong>Role: </strong>Programmer & Designer</span>
+                    <span class="d-none d-lg-inline-block badge badge-project"><strong>Role: </strong>Programmer &
+                        Designer</span>
                     <span class="d-none d-lg-inline-block badge badge-project"><strong>Year: </strong>2020</span>
                 </div>
                 <div class="col d-ms-none">
@@ -182,7 +183,7 @@
             <div class="row text-center footer-container">
                 <!-- ARROW ICON -->
                 <div class="col-12">
-                    <a href="#top">
+                    <a href="#body">
                         <i class="fas fa-angle-double-up fa-2x" id="footer-arrow"></i>
                     </a>
                 </div>
@@ -229,6 +230,31 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    if (hash != "#carouselExampleIndicators") {
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top //- 130 // -130 para la navbar
+                        }, 900, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            // window.location.hash = hash;
+                        });
+                    }
+                } // End if
+            });
+        });
     </script>
 </body>
 
